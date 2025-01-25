@@ -44,7 +44,7 @@ public class PlayerAddPassenger implements Listener {
     @EventHandler(priority = EventPriority.NORMAL)
     public void onPlayerAddPassenger(PlayerAddPassengerEvent event) {
         var player = event.getPlayer();
-        var entity = event.getEntity();
+        var livingEntity = event.getLivingEntity();
         //cancel event if you want
     }
 }
@@ -62,8 +62,8 @@ public class PlayerEjectPassenger implements Listener {
     @EventHandler(priority = EventPriority.NORMAL)
     public void onPlayerEjectPassenger(PlayerEjectPassengerEvent event) {
         var player = event.getPlayer();
-        var block = event.getBlock();
-        var entity = event.getEntity();
+        var clickedBlock = event.getClickedBlock();
+        var livingEntity = event.getLivingEntity();
         //cancel event if you want
     }
 }
