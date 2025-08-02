@@ -1,0 +1,272 @@
+name: Carry
+version: '${project.version}'
+main: org.achymake.carry.Carry
+api-version: '1.21'
+prefix: '${project.name}'
+load: STARTUP
+depend:
+  - WorldGuard
+author: AchyMake
+description: '${project.description}'
+website: '${project.url}'
+commands:
+  carry:
+    description: main command
+    permission: carry.command.carry
+    permission-message: You do not have the permissions to execute this command
+permissions:
+  carry.command.carry:
+    description: main command
+    default: op
+  carry.event.carry.allay:
+    description: allows to carry allay
+    default: op
+  carry.event.carry.armadillo:
+    description: allows to carry armadillo
+    default: op
+  carry.event.carry.axolotl:
+    description: allows to carry axolotl
+    default: op
+  carry.event.carry.bat:
+    description: allows to carry bat
+    default: op
+  carry.event.carry.bee:
+    description: allows to carry bee
+    default: op
+  carry.event.carry.blaze:
+    description: allows to carry blaze
+    default: op
+  carry.event.carry.bogged:
+    description: allows to carry bogged
+    default: op
+  carry.event.carry.breeze:
+    description: allows to carry breeze
+    default: op
+  carry.event.carry.camel:
+    description: allows to carry camel
+    default: op
+  carry.event.carry.cat:
+    description: allows to carry cat
+    default: op
+  carry.event.carry.cave_spider:
+    description: allows to carry cave spider
+    default: op
+  carry.event.carry.chicken:
+    description: allows to carry chicken
+    default: op
+  carry.event.carry.cod:
+    description: allows to carry cod
+    default: op
+  carry.event.carry.cow:
+    description: allows to carry cow
+    default: op
+  carry.event.carry.creeper:
+    description: allows to carry creeper
+    default: op
+  carry.event.carry.dolphin:
+    description: allows to carry dolphin
+    default: op
+  carry.event.carry.donkey:
+    description: allows to carry donkey
+    default: op
+  carry.event.carry.drowned:
+    description: allows to carry drowned
+    default: op
+  carry.event.carry.elder_guardian:
+    description: allows to carry elder guardian
+    default: op
+  carry.event.carry.ender_dragon:
+    description: allows to carry ender dragon
+    default: op
+  carry.event.carry.enderman:
+    description: allows to carry enderman
+    default: op
+  carry.event.carry.endermite:
+    description: allows to carry endermite
+    default: op
+  carry.event.carry.evoker:
+    description: allows to carry evoker
+    default: op
+  carry.event.carry.fox:
+    description: allows to carry fox
+    default: op
+  carry.event.carry.frog:
+    description: allows to carry frog
+    default: op
+  carry.event.carry.ghast:
+    description: allows to carry ghast
+    default: op
+  carry.event.carry.giant:
+    description: allows to carry giant
+    default: op
+  carry.event.carry.glow_squid:
+    description: allows to carry glow squid
+    default: op
+  carry.event.carry.goat:
+    description: allows to carry goat
+    default: op
+  carry.event.carry.guardian:
+    description: allows to carry guardian
+    default: op
+  carry.event.carry.happy_ghast:
+    description: allows to carry happy ghast
+    default: op
+  carry.event.carry.hoglin:
+    description: allows to carry hoglin
+    default: op
+  carry.event.carry.horse:
+    description: allows to carry horse
+    default: op
+  carry.event.carry.husk:
+    description: allows to carry husk
+    default: op
+  carry.event.carry.illusioner:
+    description: allows to carry illusioner
+    default: op
+  carry.event.carry.iron_golem:
+    description: allows to carry iron golem
+    default: op
+  carry.event.carry.llama:
+    description: allows to carry llama
+    default: op
+  carry.event.carry.magma_cube:
+    description: allows to carry magma cube
+    default: op
+  carry.event.carry.mooshroom:
+    description: allows to carry mooshroom
+    default: op
+  carry.event.carry.mule:
+    description: allows to carry mule
+    default: op
+  carry.event.carry.ocelot:
+    description: allows to carry ocelot
+    default: op
+  carry.event.carry.panda:
+    description: allows to carry panda
+    default: op
+  carry.event.carry.parrot:
+    description: allows to carry parrot
+    default: op
+  carry.event.carry.phantom:
+    description: allows to carry phantom
+    default: op
+  carry.event.carry.pig:
+    description: allows to carry pig
+    default: op
+  carry.event.carry.piglin:
+    description: allows to carry piglin
+    default: op
+  carry.event.carry.piglin_brute:
+    description: allows to carry piglin brute
+    default: op
+  carry.event.carry.pillager:
+    description: allows to carry pillager
+    default: op
+  carry.event.carry.polar_bear:
+    description: allows to carry polar bear
+    default: op
+  carry.event.carry.pufferfish:
+    description: allows to carry pufferfish
+    default: op
+  carry.event.carry.rabbit:
+    description: allows to carry rabbit
+    default: op
+  carry.event.carry.ravager:
+    description: allows to carry ravager
+    default: op
+  carry.event.carry.salmon:
+    description: allows to carry salmon
+    default: op
+  carry.event.carry.sheep:
+    description: allows to carry sheep
+    default: op
+  carry.event.carry.shulker:
+    description: allows to carry shulker
+    default: op
+  carry.event.carry.silverfish:
+    description: allows to carry silverfish
+    default: op
+  carry.event.carry.skeleton:
+    description: allows to carry skeleton
+    default: op
+  carry.event.carry.skeleton_horse:
+    description: allows to carry skeleton horse
+    default: op
+  carry.event.carry.slime:
+    description: allows to carry slime
+    default: op
+  carry.event.carry.sniffer:
+    description: allows to carry sniffer
+    default: op
+  carry.event.carry.snow_golem:
+    description: allows to carry snow golem
+    default: op
+  carry.event.carry.spider:
+    description: allows to carry spider
+    default: op
+  carry.event.carry.squid:
+    description: allows to carry squid
+    default: op
+  carry.event.carry.stray:
+    description: allows to carry stray
+    default: op
+  carry.event.carry.strider:
+    description: allows to carry strider
+    default: op
+  carry.event.carry.tadpole:
+    description: allows to carry tadpole
+    default: op
+  carry.event.carry.trader_llama:
+    description: allows to carry trader llama
+    default: op
+  carry.event.carry.tropical_fish:
+    description: allows to carry tropical fish
+    default: op
+  carry.event.carry.turtle:
+    description: allows to carry turtle
+    default: op
+  carry.event.carry.vex:
+    description: allows to carry vex
+    default: op
+  carry.event.carry.villager:
+    description: allows to carry villager
+    default: op
+  carry.event.carry.vindicator:
+    description: allows to carry vindicator
+    default: op
+  carry.event.carry.wandering_trader:
+    description: allows to carry wandering trader
+    default: op
+  carry.event.carry.warden:
+    description: allows to carry warden
+    default: op
+  carry.event.carry.witch:
+    description: allows to carry witch
+    default: op
+  carry.event.carry.wither:
+    description: allows to carry wither
+    default: op
+  carry.event.carry.wither_skeleton:
+    description: allows to carry wither skeleton
+    default: op
+  carry.event.carry.wolf:
+    description: allows to carry wolf
+    default: op
+  carry.event.carry.zoglin:
+    description: allows to carry zoglin
+    default: op
+  carry.event.carry.zombie:
+    description: allows to carry zombie
+    default: op
+  carry.event.carry.zombie_horse:
+    description: allows to carry zombie horse
+    default: op
+  carry.event.carry.zombie_villager:
+    description: allows to carry zombie villager
+    default: op
+  carry.event.carry.zombified_piglin:
+    description: allows to carry zombified piglin
+    default: op
+  carry.event.join.update:
+    description: gets update when joining
+    default: op
