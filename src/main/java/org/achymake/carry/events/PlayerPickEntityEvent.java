@@ -1,22 +1,18 @@
 package org.achymake.carry.events;
 
-import org.bukkit.block.Block;
 import org.bukkit.entity.Entity;
 import org.bukkit.entity.Player;
-import org.bukkit.event.Event;
 import org.bukkit.event.HandlerList;
 import org.checkerframework.checker.nullness.qual.NonNull;
 
-public class PlayerEjectPassengerEvent extends Event {
+public class PlayerPickEntityEvent {
     private static final HandlerList handlers = new HandlerList();
     private final Player player;
-    private final Entity passenger;
-    private final Block clickedBlock;
+    private final Entity rightClicked;
     private boolean cancelled;
-    public PlayerEjectPassengerEvent(Player player, Entity passenger, Block clickedBlock) {
+    public PlayerPickEntityEvent(Player player, Entity rightClicked) {
         this.player = player;
-        this.passenger = passenger;
-        this.clickedBlock = clickedBlock;
+        this.rightClicked = rightClicked;
     }
     public void setCancelled(boolean cancel) {
         this.cancelled = cancel;
@@ -24,11 +20,8 @@ public class PlayerEjectPassengerEvent extends Event {
     public Player getPlayer() {
         return player;
     }
-    public Entity getPassenger() {
-        return passenger;
-    }
-    public Block getClickedBlock() {
-        return clickedBlock;
+    public Entity getRightClicked() {
+        return rightClicked;
     }
     public boolean isCancelled() {
         return cancelled;
