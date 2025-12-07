@@ -2,10 +2,11 @@ package org.achymake.carry.events;
 
 import org.bukkit.entity.Entity;
 import org.bukkit.entity.Player;
+import org.bukkit.event.Event;
 import org.bukkit.event.HandlerList;
 import org.checkerframework.checker.nullness.qual.NonNull;
 
-public class PlayerPickEntityEvent {
+public class PlayerPickEntityEvent extends Event {
     private static final HandlerList handlers = new HandlerList();
     private final Player player;
     private final Entity rightClicked;
